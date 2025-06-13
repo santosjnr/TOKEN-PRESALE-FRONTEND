@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>buy Tokens – NovaChain</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">NovaChain</div>
+            <i class="fa fa-bars" id="menu-toggle"></i>
+            <div class="nav-links" id="nav-links">
+                <a href="./homepage.html">Home</a>
+                <a href="test.html">Sell Tokens</a>
+                <a href="claim.html">Claim Tokens</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h2 class="text-2xl font-semibold mb-4">Get Early Access to NovaChain</h2>
+        <h2 class="text-3xl font-semibold mb-4">Be Early. Be Bold. Be Part of NovaChain.</h2>
+        <p class="mb-4">
+            NovaChain is a next-generation blockchain platform designed for speed, scalability, and seamless smart
+            contract integration. With our presale, you have a unique opportunity to get early access to $NOVA
+            tokens before public listing — at a discounted rate.
+        </p>
+        <p class="list-disc pl-5 space-y-2">
+            Presale Price: <strong>$0.05 / NOVA</strong><br>
+            Hard Cap: <strong>$5,000,000</strong><br>
+            Soft Cap: <strong>$1,000,000</strong><br>
+            Total Supply: <strong>1,000,000,000 NOVA</strong><br>
+            Token Standard: <strong>ERC-20</strong><br>
+        </p>
+
+    </header>
+
+    <section class="features">
+        <div class="cont">
+            <div id="connect-group">
+                <button id="connect-btn">Connect</button>
+                <button id="disconnect-btn">Disconnect</button>
+            </div>
+            <div class="form-group">
+                <div id="wallet-address-group">
+                    <i class="fa fa-wallet"></i>
+                    <label for="wallet-address">Wallet Address:</label>
+                    <span id="wallet-address-span"></span>
+                </div>
+                <!-- <div id="current-balance-group">
+                    <label>Wallet Balance:</label>
+                    <span id="wallet-balance-span"> 0 ETH</span>
+                </div> -->
+                <div>
+                    <div class="card">
+                        <input class="num" type="number" id="ethAmount" placeholder="Amount in ETH" />
+                        <button id="buy-btn">Buy Tokens</button>
+                    </div>
+                    <p class="pm1">Join the decentralized revolution — be early, be powerful.</p>
+                </div>
+            </div>
+
+    </section>
+
+    <section class="sell-form">
+        <section class="tokenomics">
+            <h2>📊 Tokenomics</h2>
+            <table class="tokenomics-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Allocation</th>
+                        <th>Vesting Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Presale</td>
+                        <td>30%</td>
+                        <td>Immediate unlock</td>
+                    </tr>
+                    <tr>
+                        <td>Liquidity Pool</td>
+                        <td>20%</td>
+                        <td>Locked for 12 months</td>
+                    </tr>
+                    <tr>
+                        <td>Team & Advisors</td>
+                        <td>15%</td>
+                        <td>6-month cliff, 24-month vesting</td>
+                    </tr>
+                    <tr>
+                        <td>Ecosystem Growth</td>
+                        <td>15%</td>
+                        <td>Quarterly unlocks</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td>10%</td>
+                        <td>Linear unlock over 12 months</td>
+                    </tr>
+                    <tr>
+                        <td>Reserve Fund</td>
+                        <td>10%</td>
+                        <td>Locked for 18 months</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Total Supply: 1,000,000,000 $NOVA</p>
+            <p>Chain: Ethereum / BNB / Solana (customizable)</p>
+        </section>
+
+
+        <p id="status"></p>
+    </section>
+    <section class="roadmap">
+
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 NovaChain. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+
+        document.getElementById("menu-icon").addEventListener("click", function () {
+            document.getElementById("navLinks").classList.toggle("active");
+        });
+    </script>
+
+
+
+</body>
+
+</html>

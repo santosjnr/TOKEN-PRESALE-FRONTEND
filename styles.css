@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f0f1a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1c1c2e;
+    padding: 15px 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #056451;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    font-family: sans-serif;
+
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #76bbae;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b44);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
+/* Features */
+.features {
+    background-image: url("tp.jpg");
+    background-color: white;
+    width: 100%;
+    height: 35vh;
+    background-color: #161625;
+}
+
+/* .feature {
+    height: 10vh;
+    background-color: white;
+    text-align: center;
+    width: 280px;
+} */
+
+#buy-btn {
+    position: relative;
+    left: 5pc;
+    top: 2.5pc;
+    background-color: rgb(94, 4, 4);
+    width: 10%;
+    color: rgb(198, 192, 192);
+    height: 6vh;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    width: 80%;
+    border-radius: 17px;
+    border: none;
+}
+
+#connect-btn {
+    position: relative;
+    left: 5pc;
+    top: 0.3pc;
+    background-color: rgb(7, 83, 7);
+    width: 10%;
+    color: rgb(198, 192, 192);
+    height: 6vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    width: 80%;
+    border-radius: 17px;
+    border: none;
+
+}
+
+#disconnect-btn {
+    display: none;
+}
+
+.tokenAmount {
+    width: 50%;
+    height: 5vh;
+    background-color: white;
+    text-align: center;
+    /* background-color: #cccccc; */
+    border-radius: 15px;
+    border: none;
+}
+
+.cont {
+    position: relative;
+    background-image: url("tp.jpg");
+    background-size: cover;
+    /* background: linear-gradient(135deg, #1e1e2f, #2b2b44); */
+    height: 32vh;
+    width: 55%;
+    top: 0.7pc;
+    left: 20pc;
+    border-radius: 10px;
+}
+
+#current-balance-group {
+    display: flex;
+    margin-left: 9pc;
+    margin-top: 1pc;
+}
+
+.num {
+    display: flex;
+    width: 80%;
+    height: 6vh;
+    text-align: center;
+    margin-left: 5pc;
+    border-radius: 15px;
+    border: none;
+    /* background: linear-gradient(135deg, #494970, #676797); */
+}
+
+.pm1 {
+    position: relative;
+    font-size: small;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    left: 11pc;
+    bottom: 2pc;
+    color: white;
+}
+
+.tokenomics-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.tokenomics-table th,
+.tokenomics-table td {
+    border: 1px solid #333;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.roadmap {
+    background-image: url("tp.jpg");
+    background-color: white;
+    height: 30vh;
+}
+
+#wallet-address-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#wallet-address {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-image: url("tp.jpg");
+    background-size: cover;
+    color: #dbd9d9;
+    margin-left: 1pc;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-top: -0.1pc;
+}

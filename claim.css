@@ -1,0 +1,125 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("grand-peaks-mount-cook.avif");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    /* background: gainsboro; */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* Base styles */
+.navbar {
+    background-color: #1c1c2e;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #056451;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #76bbae;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: rgb(187, 177, 177);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    margin: 10px 0;
+    width: 80%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+#disconnect-btn {
+    display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-decoration: none;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 12px;
+        text-align: center;
+        border-top: 1px solid #444;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+}

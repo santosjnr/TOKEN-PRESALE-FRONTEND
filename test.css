@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f0f1a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1c1c2e;
+    padding: 15px 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #056451;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    font-family: sans-serif;
+    
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #76bbae;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b44);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    background-color: #161625;
+}
+
+.feature {
+    text-align: center;
+    width: 280px;
+}
+
+#sell-btn {
+    background-color: rgb(152, 5, 5);
+    width: 10%;
+    height: 5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    border-radius: 15px;
+    border-width: none;
+    text-align: center;
+    border: none;
+}
+
+#connect-btn {
+    background-color: rgb(7, 83, 7);
+    width: 10%;
+    color: white;
+    height: 6vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    border-radius: 17px;
+    border-bottom: none;
+    border: none;
+
+}
+
+#tokenAmount {
+    width: 20%;
+    height: 5vh;
+    text-align: center;
+    background-color: #cccccc;
+    border-radius: 15px;
+    border: none;
+}
+
+#disconnect-btn{
+    display: none;
+}

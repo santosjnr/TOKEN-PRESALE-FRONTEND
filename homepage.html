@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaChain - The Future of DeFi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: #051b34;
+            color: #ffffff;
+        }
+
+        .navbar {
+            background-color: #0d2e6b;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ebf3f1;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            text-decoration: none;
+            font-family: sans-serif;
+
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #76bbae;
+        }
+
+        #menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        header,
+        section {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header {
+            background-color: #051b34;
+            /* background: linear-gradient(to right, #3a0ca3, #4361ee); */
+            text-align: center;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-family: Poppins, sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 26.4px;
+            color: rgb(255, 255, 255);
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .cta {
+            margin-top: 1.5rem;
+        }
+
+        .cta a {
+            background: #01551d;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            display: inline-block;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .tokenomics-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .tokenomics-table th,
+        .tokenomics-table td {
+            border: 1px solid #333;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        .roadmap,
+        .how-to-buy,
+        .faq,
+        .contact {
+            margin-top: 2rem;
+        }
+
+        ul {
+            margin-left: 1rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+        }
+
+        .faq-item h4 {
+            color: #ff6b00;
+        }
+
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 1rem;
+            color: #777;
+            margin-top: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+
+            section {
+                padding: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">NovaChain</div>
+            <i class="fa fa-bars" id="menu-toggle"></i>
+            <div class="nav-links" id="nav-links">
+                <a href="about.html">About</a>
+                <a href="faq.html">Faq</a>
+                <a href="tokenomics.html">Tokenomics</a>
+
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>Welcome to NovaChain</h1>
+        <p>The Future of Decentralized Finance Starts Here</p>
+        <p>NovaChain is a revolutionary blockchain-based ecosystem built for speed, scalability, and real-world utility.
+        </p>
+        <p>🔥 <strong>Join our Presale Now!</strong></p>
+        <p>Presale Price: $0.005 | Launch Price: $0.015 | Hard Cap: $2,000,000</p>
+        <p>Presale Ends: July 30, 2025</p>
+        <p>Early adopters get bonus allocations. Don’t miss your chance to be part of something BIG.</p>
+        <div class="cta">
+            <a href="./main.html">🚀 Buy Nova Now</a>
+            <a href="#">📄 Read Whitepaper</a>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>📖 About Us</h2>
+        <p>NovaChain is more than just another crypto token. It’s a high-performance DeFi protocol designed to power the
+            next generation of blockchain applications.</p>
+        <ul>
+            <li>Community First: Nova is built for and by its community.</li>
+            <li>Innovation: Leveraging cutting-edge tech for DeFi solutions.</li>
+            <li>Sustainability: Long-term growth and utility-driven value.</li>
+        </ul>
+    </section>
+
+    <section class="tokenomics">
+        <h2>📊 Tokenomics</h2>
+        <table class="tokenomics-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Allocation</th>
+                    <th>Vesting Schedule</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Presale</td>
+                    <td>30%</td>
+                    <td>Immediate unlock</td>
+                </tr>
+                <tr>
+                    <td>Liquidity Pool</td>
+                    <td>20%</td>
+                    <td>Locked for 12 months</td>
+                </tr>
+                <tr>
+                    <td>Team & Advisors</td>
+                    <td>15%</td>
+                    <td>6-month cliff, 24-month vesting</td>
+                </tr>
+                <tr>
+                    <td>Ecosystem Growth</td>
+                    <td>15%</td>
+                    <td>Quarterly unlocks</td>
+                </tr>
+                <tr>
+                    <td>Marketing</td>
+                    <td>10%</td>
+                    <td>Linear unlock over 12 months</td>
+                </tr>
+                <tr>
+                    <td>Reserve Fund</td>
+                    <td>10%</td>
+                    <td>Locked for 18 months</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Total Supply: 1,000,000,000 $NOVA</p>
+        <p>Chain: Ethereum / BNB / Solana (customizable)</p>
+    </section>
+
+    <!-- <section class="roadmap">
+        <h2>🛣️ Roadmap</h2>
+        <ul>
+            <li>Q2 2025 – Concept & Whitepaper</li>
+            <li>Q3 2025 – Presale Launch & Smart Contract Audit</li>
+            <li>Q4 2025 – DEX Listing, Staking Platform Live</li>
+            <li>Q1 2026 – Nova Wallet & Mobile App</li>
+            <li>Q2 2026 – Strategic Partnerships, CEX Listings</li>
+            <li>Q3 2026 – DAO Governance Launch</li>
+            <li>Q4 2026 – Real-World Integrations & Global Expansion</li>
+        </ul>
+    </section> -->
+
+    <section class="how-to-buy">
+        <h2>💰 How to Buy $NOVA</h2>
+        <ol>
+            <li>Connect your wallet (MetaMask / Trust Wallet)</li>
+            <li>Select your preferred chain (ETH, BNB, SOL)</li>
+            <li>Choose the amount of $NOVA to buy</li>
+            <li>Confirm the transaction</li>
+            <li>Claim tokens post-presale</li>
+        </ol>
+        <p>Minimum Buy: $10 | Maximum Buy: $10,000</p>
+        <p>Accepted: ETH, BNB, USDT, SOL</p>
+        <p><a href="#">Need help? See Step-by-Step Guide</a></p>
+    </section>
+
+    <section class="faq">
+        <h2>❓ FAQ</h2>
+        <div class="faq-item">
+            <h4>What makes NovaChain different?</h4>
+            <p>Speed, security, low gas fees, and real-world partnerships set us apart.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Is there a vesting period?</h4>
+            <p>Presale tokens are immediately available, but team and marketing tokens are vested.</p>
+        </div>
+        <div class="faq-item">
+            <h4>When will the token launch on exchanges?</h4>
+            <p>DEX listing will go live within 48 hours of presale conclusion.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Is there a KYC?</h4>
+            <p>No KYC is required for the presale. Stay anonymous, stay decentralized.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>📬 Contact Us</h2>
+        <p>Got questions? We’d love to hear from you.</p>
+        <ul>
+            <li>📧 Email: <a href="mailto:support@novachain.io">support@novachain.io</a></li>
+            <li>💬 Telegram: <a href="https://t.me/NovaChainOfficial">@NovaChainOfficial</a></li>
+            <li>🐦 Twitter: <a href="https://twitter.com/NovaChain">@NovaChain</a></li>
+            <li>🌐 Discord: <a href="#">Join Community</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 NovaChain. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+
+
+        // FAQ toggle behavior
+        document.querySelectorAll('.faq-item h4').forEach(header => {
+            header.style.cursor = "pointer";
+            header.addEventListener('click', () => {
+                const para = header.nextElementSibling;
+                if (para.style.display === "none" || !para.style.display) {
+                    para.style.display = "block";
+                } else {
+                    para.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

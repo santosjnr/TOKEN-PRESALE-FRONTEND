@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Sell Tokens – NovaChain</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="test.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">NovaChain</div>
+            <i class="fa fa-bars" id="menu-toggle"></i>
+            <div class="nav-links" id="nav-links">
+                <a href="./homepage.html">Home</a>
+                <a href="main.html">Buy Tokens</a>
+                <!-- <a href="sell.html" class="active">Sell Tokens</a> -->
+                <a href="claim.html">Claim Tokens</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Sell Your Tokens</h1>
+        <p>Turn your pre-sale tokens into ETH securely and instantly with NovaChain.</p>
+        <p>Connect your wallet and enter the amount you'd like to sell.</p>
+        <div id="connect-group">
+            <button id="connect-btn">Connect</button>
+            <button id="disconnect-btn">Disconnect</button>
+        </div>
+        <div class="form-group">
+            <div id="wallet-address-group">
+                <i class="fa fa-wallet"></i>
+                <label for="wallet-address">Wallet Address:</label>
+                <span id="wallet-address-span"></span>
+            </div>
+            <div>
+                <div class="card">
+                    <input type="number" id="tokenAmount" placeholder="Token amount" />
+                    <button id="sell-btn">Sell Tokens</button>
+                </div>
+
+
+            </div>
+    </header>
+
+    <section class="features">
+        <div class="feature">
+            <i class="fas fa-lock"></i>
+            <h3>Secure & Audited</h3>
+            <p>Smart contracts verified and trusted by the community.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-coins"></i>
+            <h3>Real-Time Pricing</h3>
+            <p>Dynamic ETH conversion based on market conditions.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-bolt"></i>
+            <h3>Instant Transfers</h3>
+            <p>ETH sent directly to your wallet upon confirmation.</p>
+        </div>
+    </section>
+
+    <section class="sell-form">
+
+        <p id="status"></p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 NovaChain. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+        async function sellPreSale() {
+            const contract = new ethers.Contract(PreTokenCA, PreTokenABI, signer);
+            if (!contract) {
+                alert("Token contract not found");
+                return;
+            }
+            const tokenAmount = document.getElementById("tokenAmount").value;
+            const tx = await contract.sellPreSale(tokenAmount);
+            await tx.wait();
+            alert("Tokens sold!");
+
+            // Update the status message
+
+
+
+
+        }
+        document.getElementById("sell-btn").addEventListener("click", sellPreSale);
+
+        document.getElementById("menu-toggle").addEventListener("click", () => {
+            document.getElementById("nav-links").classList.toggle("show");
+        });
+    </script>
+
+
+
+</body>
+
+</html>
